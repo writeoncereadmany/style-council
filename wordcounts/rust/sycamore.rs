@@ -10,7 +10,7 @@ type Occurrences = u32;
 type UnsortedResults = HashMap<Word, Occurrences>;
 
 fn load_text() -> Text {
-    let mut file = File::open("./src/moby_dick_no_punctuation.txt").unwrap();
+    let mut file = File::open("moby_dick_no_punctuation.txt").unwrap();
     let mut contents = String::new();
     file.read_to_string(&mut contents).unwrap();
     contents = contents + " ";

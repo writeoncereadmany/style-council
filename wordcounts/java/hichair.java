@@ -11,7 +11,7 @@ import static java.util.stream.Collectors.groupingBy;
 
 public class WordCount {
     public static void main(String... args) throws Exception {
-        Files.lines(get("/Users/tom/Downloads/moby_dick_no_punctuation.txt"))
+        Files.lines(get("moby_dick_no_punctuation.txt"))
             .flatMap(line -> Stream.of(line.split(" ")))
             .filter(word -> !"".equals(word.trim()))
             .collect(groupingBy(String::toLowerCase, counting()))

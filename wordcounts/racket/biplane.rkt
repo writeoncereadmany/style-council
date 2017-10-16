@@ -17,7 +17,5 @@ FoUr
 TEST-SAMPLE
 ) '(("four" . 4) ("three" . 3) ("two" . 2) ("one" . 1))))
 
-(call-with-input-file "/Users/tom/Downloads/moby_dick_no_punctuation.txt"
+(call-with-input-file "moby_dick_no_punctuation.txt"
   (compose display count-words port->string))
-
-

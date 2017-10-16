@@ -5,7 +5,7 @@ object Words {
   def count: Unit = {
 
     val lowerCaseWords: List[String] =
-          Source.fromFile("/home/bruce/scratch/moby_dick_no_punctuation.txt")
+          Source.fromFile("moby_dick_no_punctuation.txt")
           .getLines
           .flatMap(_.split(' '))
           .filter(_ != "")
@@ -29,4 +29,3 @@ object Words {
   }
 
 }
-

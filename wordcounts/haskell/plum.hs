@@ -1,12 +1,12 @@
 import Data.MultiSet (insert, toOccurList)
 import qualified Data.MultiSet as Bag
 import Control.Arrow
-import Data.Char 
-import Data.Ord 
+import Data.Char
+import Data.Ord
 import Data.List (sortBy)
 
 main :: IO ()
-main = do content <- readFile "/Users/tom/Downloads/moby_dick_no_punctuation.txt" 
+main = do content <- readFile "moby_dick_no_punctuation.txt" 
           mapM_ putStrLn (counts content)
 
 counts :: String -> [String]
